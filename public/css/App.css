@@ -1,0 +1,110 @@
+.App {
+  align-content: center;
+  padding: 20px;
+  background: #fff
+}
+
+.App-title {
+  font-size: 36px;
+  color: #007FA3;
+  float: left;
+}
+
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #D8D8D8;
+  padding: 30px;
+  margin-top: 1px;
+}
+.header{
+  display: inline-block;
+  margin-top: 8px;
+  width: 100%;
+}
+.card-body {
+  padding: 15px;
+  background-color: #fff;
+  width: 212px;
+  height: 112;
+  display: block;
+  /*border:1px solid blue;*/
+  align-content: center;
+  box-shadow: 5px 10px #888888;
+  float: left;
+  margin: 30px;
+}
+.display-name {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #E93939; 
+}
+.button{
+  border: none;
+  /*box-shadow: none;*/
+  font-family: inherit;
+  background-color: transparent;
+  color: #007FA3;
+  font-size: 14px;
+  transition: .25s;
+  /*padding: 5px; */
+  transition: all 0.5s;
+  cursor: pointer; 
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-left: 7px;
+}
+.wrapper {
+  margin-top: -50px;
+  padding-left: 60px;
+}
+.image--cover {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+}
+.pagination {
+  display: inline-block;
+  float: right;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+a.active{
+  pointer-events: all;
+}
