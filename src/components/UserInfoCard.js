@@ -5,11 +5,7 @@ import {connect} from 'react-redux'
 import {userActions} from '../actions'
 class UserInfoCard extends React.Component {
     render(){
-        console.log("apis data="+this.props.data);
-        var apidata=undefined;
-        if(this.props.data){
-            apidata= this.props.data.data;
-        }
+        var apidata= this.props.data===undefined?undefined:this.props.data.data;
         var userdata=[];
         if(apidata){
         apidata.forEach(element => {
@@ -20,9 +16,7 @@ class UserInfoCard extends React.Component {
         }
             return (
                 <React.Fragment>
-                     
-                    {userdata}
-                   
+                    {userdata}      
                 </React.Fragment>
             )
         

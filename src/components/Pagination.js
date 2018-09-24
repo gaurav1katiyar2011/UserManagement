@@ -7,9 +7,8 @@ class Pagination extends Component {
         const {pageNo,totalUsers,totalPages} =this.props;
         var nextPage=(pageNo===undefined?1:pageNo+1);
         var prePage=(pageNo===undefined || pageNo===1 ?1:pageNo-1);
-        var preStatusClass= pageNo==1?'disabled':'active';
+        var preStatusClass= pageNo == 1?'disabled':'active';
         var nextStatusClass=pageNo>=totalPages?'disabled':'active';
-
         console.log("data==>>"+pageNo)
         console.log("data==>>>>>>"+pageNo)
         return (

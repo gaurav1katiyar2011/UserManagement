@@ -31,9 +31,10 @@ const UserDetails=(state={},action) =>{
         var total=copystate.data.total;
         
         data['data']=filterdata;
+        data['page']=copystate.data.page;
         data['per_page']=copystate.data.per_page;
         data['total']=(total==undefined?0:total-1)
-        data['per_page']=copystate.data.total_pages;
+        data['total_pages']=copystate.data.total_pages;
         
         return{
             ...state,
